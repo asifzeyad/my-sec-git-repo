@@ -4,16 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <style>
+        
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* shared style */
+    .dark2{color: #474747;
+    }
+    .btn-pri{
+        background-color: #FD6E0A;
+        border-style: none;
+        border-radius: 3px;
+        padding: 18px 35px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .secondary-bg{
+        background-color: #fff8f3;
+    }
+        /* header style */
+        .header{
+            background-image: url(../my-sec-git-repo/images/developer.png), url(../my-sec-git-repo/images/header_bg.png);
+            background-repeat: no-repeat;
+            background-position: top left, bottom right;
+        }
+    /* nav style */
+       nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 100px;
+       }
+       .nav-title{
+            font-weight: 800;
+            font-size: 45px;
+       }
        
+       li{list-style: none;}
+       a{text-decoration: none;}
+       ul li a{font-size: 20px;}
+
+       nav ul{display: flex;
+            align-items: center;
+        }
+       nav ul li{
+        margin-right: 50px;
+       }
+
+       /* banner style */
+        .banner{
+            display: flex;
+        }
+       .banner-greedings{
+            font-size: 45px;
+            font-weight: 600;
+       }
+        .banner-con{
+            max-width: 580px;
+            justify-content: space-between;
+            margin: 0 35px 0 230px;
+        }
+       .banner-title{
+            font-weight: 700;
+            font-size: 45px;
+        }
+        .banner-pro-pic{
+            width: 580px;
+        }
+        /* main style */
+        main{
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        /* about start */
+        .section-title{
+            font-size: 35px;
+            font-weight: 700;
+            color: #181818;
+        }
+        .sec-des{
+            font-size: 18px;
+            color: #757575;
+        }
+        .about{
+            border-radius: 10px;
+            padding: 130px 150px;
+            text-align: center;
+            margin-top: 150px;
+        }
+        .
     </style>
 </head>
-<body>
-    <header>
-
+<body class="open-sans-normal">
+    <header class="header secondary-bg">
+        <nav>
+            <h3 class="nav-title">Ma<span style="color: #FD6E0A;">r</span>y</h3>
+            <ul>
+               <li><a href="#" class="dark2">Portfolio</a></li>
+               <li><a href="#" class="dark2">Blog</a></li>
+               <li><a href="#"><button class="btn-pri">Hire Me</button></a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="banner-con">
+                <h4 class="banner-greedings dark2">Hi, I am</h4>
+                <h1 class="banner-title">Mary Hardy</h1>
+                <p class="class-des">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet alias delectus maxime. Maiores cupiditate ducimus enim eius vero ex iste.
+                </p>
+                <button class="btn-pri">Download CV</button>
+                <button class="btn-pri">Contact</button>
+            </div>
+            <img class="banner-pro-pic" src="C:\Users\Administrator\Desktop\new-folder\my-sec-git-repo\images\hardy.png" alt="">
+        </div>
+        
     </header>
     <main>
-       
+        <section class="about  secondary-bg">
+            <h3 class="section-title">About</h3>
+            <p class="sec-des">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi ad facilis, labore laborum odio omnis magni commodi earum repudiandae quae sequi dolorem quidem ex dignissimos alias reprehenderit nostrum, quasi quibusdam aut voluptatem consequuntur sapiente natus totam officia. Ullam, rerum distinctio?
+            </p>
+            <div class="about-items">
+               
+               <div class="about-item">
+                <p class="item-title">Name</p>
+                <p class="item-des">Mary Hardy</p>
+               </div>
+               <div class="about-item">
+                <p class="item-title">E-mail</p>
+                <p class="item-des">asdf@gmail.com  </p>
+               </div>
+               <div class="about-item">
+                <p class="item-title">Date Of Birth</p>
+                <p class="item-des">Feb 28,2001</p>
+               </div>
+               <div class="about-item">
+                <p class="item-title">Form</p>
+                <p class="item-des">Chattogram, Bangladesh.</p>
+               </div>
+            </div>
+        </section>
     </main>
     <footer>
 
