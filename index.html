@@ -34,9 +34,12 @@
     .secondary-bg{
         background-color: #fff8f3;
     }
+    .text-center{
+        text-align: center;
+    }
         /* header style */
         .header{
-            background-image: url(../my-sec-git-repo/images/developer.png), url(../my-sec-git-repo/images/header_bg.png);
+            background-image: url(images/developer.png), url(images/header_bg.png);
             background-repeat: no-repeat;
             background-position: top left, bottom right;
         }
@@ -88,6 +91,9 @@
             max-width: 1140px;
             margin: 0 auto;
         }
+        main section{
+            margin: 130px 0 130px 0;
+        }
         /* about start */
         .section-title{
             font-size: 35px;
@@ -111,6 +117,24 @@
         .item-title{
             font-weight: 600;
         }
+        .skills-con{
+            display: flex;
+            gap: 24px;
+        }
+        .skill{
+            padding: 30px;
+            box-shadow: 0 6px 50px 0 rgba(0, 0,0,0.05);
+            border-radius: 5px;
+        }
+        /* resume style */
+        .res-con{
+            display: flex;
+            gap: 24px;
+        }
+        .res-download-cv{
+            margin: 50px;
+            font-weight: 300;
+        }
     </style>
 </head>
 <body class="open-sans-normal">
@@ -133,7 +157,7 @@
                 <button class="btn-pri">Download CV</button>
                 <button class="btn-pri">Contact</button>
             </div>
-            <img class="banner-pro-pic" src="./images/hardy.png" alt="">
+            <img class="banner-pro-pic" src="images/hardy.png" alt="">
         </div>
         
     </header>
@@ -163,6 +187,85 @@
                </div>
             </div>
         </section>
+        <!-- what is do section -->
+         <section class="skills">
+            <h3 class="section-title text-center">What I do?</h3>
+            <p class="sec-des text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident amet saepe animi delectus itaque perspiciatis libero numquam iste, reprehenderit deleniti veniam, similique est illum! Voluptatibus quam hic corporis aut rerum.
+            </p>
+            <div class="skills-con">
+                <!-- .skill*4>img+h4.skill-title+p.skill-des -->
+                <div class="skill">
+                    <img src="./images/icons/js.png" alt="">
+                    <h4 class="skill-title">Vanilla js</h4>
+                    <p class="skill-des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat ratione facere earum ut ea facilis numquam hic tenetur similique!</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/icons/react.png" alt="">
+                    <h4 class="skill-title">React</h4>
+                    <p class="skill-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae, et ex sequi sapiente ratione aspernatur laborum rem tempora nisi!</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/icons/nodejs.png" alt="">
+                    <h4 class="skill-title">Node.js</h4>
+                    <p class="skill-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, voluptatem omnis ratione vel eveniet quasi. Aspernatur unde hic ipsum explicabo.</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/icons/mongo.png" alt="">
+                    <h4 class="skill-title">MongoDB</h4>
+                    <p class="skill-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate debitis ut sequi nesciunt esse tempore consectetur culpa voluptate temporibus mollitia.</p>
+                </div>
+            </div>
+         </section>
+         <section class="resume">
+           <h3 class="section-title">A summary of my resume</h3>
+           <!-- .resume-col*2>h3.res-col-title+.exp*3>+h4.exp-title+h5.exp-sub-title+exp-des -->
+           <div class="res-con">
+            <div class="res-col">
+                <h3 class="res-col-title">My Education</h3>
+                <div class="exp">
+                    <h4 class="exp-title">Masters in Accounting</h4>
+                    <h5 class="exp-sub-title">Harvard University</h5>
+                    <div class="exp-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolore velit assumenda. Odit, totam explicabo!</div>
+                </div>
+                <hr>
+                <div class="exp">
+                    <h4 class="exp-title">Masters in Accounting</h4>
+                    <h5 class="exp-sub-title">Harvard University</h5>
+                    <div class="exp-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolore velit assumenda. Odit, totam explicabo!</div>
+                </div>
+                <hr>
+                <div class="exp">
+                    <h4 class="exp-title">Masters in Accounting</h4>
+                    <h5 class="exp-sub-title">Harvard University</h5>
+                    <div class="exp-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolore velit assumenda. Odit, totam explicabo!</div>
+                </div>
+               </div>
+                <hr>
+                <div class="res-col">
+                    <h3 class="res-col-title">My Experiance</h3>
+                    <div class="exp">
+                        <h4 class="exp-title">Masters in Accounting</h4>
+                        <h5 class="exp-sub-title">Harvard University</h5>
+                        <div class="exp-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolore velit assumenda. Odit, totam explicabo!</div>
+                    </div>
+                    <hr>
+                    <div class="exp">
+                        <h4 class="exp-title">Masters in Accounting</h4>
+                        <h5 class="exp-sub-title">Harvard University</h5>
+                        <div class="exp-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolore velit assumenda. Odit, totam explicabo!</div>
+                    </div>
+                    <hr>
+                    <div class="exp">
+                        <h4 class="exp-title">Masters in Accounting</h4>
+                        <h5 class="exp-sub-title">Harvard University</h5>
+                        <div class="exp-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolore velit assumenda. Odit, totam explicabo!</div>
+                    </div>
+                </div>
+           </div>
+           <div class="text-center res-download-cv">
+            <button class="btn-pri">Download</button>
+           </div>
+         </section>
     </main>
     <footer>
 
